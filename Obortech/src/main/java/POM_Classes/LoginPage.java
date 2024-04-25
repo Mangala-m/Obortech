@@ -86,7 +86,29 @@ public WebDriver driver;
 	
 	
 	
+	@FindBy(xpath="//body/div[@id='__next']/div[@id='page-top']/div[@id='wrapper']/div[@id='content-wrapper']/div[@id='content']/nav[1]/ul[1]/li[4]/a[1]/span[1]")
+	private WebElement myProfile;
+	
+	public WebElement getMyProfile()
+	{
+		return myProfile;
+	}
 	
 	
+	@FindBy(xpath="//body/div[@id='__next']/div[@id='page-top']/div[@id='wrapper']/div[@id='content-wrapper']/div[@id='content']/nav[1]/ul[1]/li[4]/div[1]/a[13]")
+	private WebElement logoutButton;
+	
+	public WebElement getLogoutButton()
+	{
+		return logoutButton;
+	}
+	
+	@FindBy(xpath="//button[contains(text(),'Logout')]")
+	private WebElement logoutofLogout;
+	
+	public WebElement getLogoutLogout()
+	{
+		return logoutofLogout;
+	}
 	
 }

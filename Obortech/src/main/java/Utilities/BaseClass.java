@@ -17,8 +17,8 @@ public DataUtility du=new DataUtility();
 
 public void launchBrowser() throws Throwable
 {
-	System.out.println("---------LAunching Browser-----------");
-	String Browser = du.datafromPropertiesfile("browser");
+	System.out.println("---------Launching Browser-----------");
+	String Browser = du.dataFromPropertiesFile("browser");
 	
 	
 	if (Browser.equals("chrome"))
@@ -42,7 +42,7 @@ public void launchBrowser() throws Throwable
 		
 	}
 	
-	String Url = du.datafromPropertiesfile("url");
+	String Url = du.dataFromPropertiesFile("url");
 	driver.get(Url);
 	driver.manage().window().maximize();
 	driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
